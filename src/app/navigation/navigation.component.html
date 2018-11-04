@@ -1,0 +1,30 @@
+<!--Main Navigation-->
+<nav id="nav-main">
+    <ul>
+        <li>
+            <a routerLink="/Home" (click)="getActiveWindow('home')" [class.active]="activation === 'home'" >Home</a>
+        </li>
+        <li>
+            <a routerLink="/About" (click)="getActiveWindow('about')" [class.active]="activation === 'about'">About</a>
+        </li>
+        <li>
+            <a routerLink="/Gallery" (click)="getActiveWindow('gallery')" [class.active]="activation === 'gallery'">Gallery</a>
+        </li>
+        <li>
+            <a routerLink="/Services" (click)="getActiveWindow('services')" [class.active]="activation === 'services'">Services</a>
+        </li>
+        <li>
+            <a routerLink="/Testimonials" (click)="getActiveWindow('testimonial')" [class.active]= "activation === 'testimonial'">Testimonials</a>
+        </li>
+        <li>
+            <a routerLink="/Clients" (click)="getActiveWindow('clients')" [class.active]="activation === 'clients'">Clients</a>
+        </li>
+        <li>
+            <a routerLink="/Pricing" (click)="getActiveWindow('pricing')" [class.active]="activation === 'pricing'">Pricing</a>
+        </li>
+    </ul>
+</nav>
+<!--End of Main Navigation-->
+
+<div id="nav-trigger"></div>
+<nav id="nav-mobile"></nav>
